@@ -55,7 +55,7 @@ export function createInvoice(invoice : penerimaanGetah[], path : string) {
   generateHeader(doc);
   generateCustomerInformation(doc, invoice);
   generateInvoiceTable(doc, invoice);
-  generateFooter(doc);
+  // generateFooter(doc);
 
   doc.end();
   doc.pipe(fs.createWriteStream(path));
